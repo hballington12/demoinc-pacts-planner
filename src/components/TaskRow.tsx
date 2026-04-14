@@ -35,6 +35,7 @@ export function TaskRow({
         />
       </td>
       <td className="task-name" title={task.description}>
+        {task.pact && <span className="pact-badge" title="Grants a Demonic Pact point">P</span>}
         {task.name}
       </td>
       <td>

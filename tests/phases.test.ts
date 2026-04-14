@@ -2,8 +2,8 @@ import { describe, it, expect } from 'vitest';
 import { PHASES } from '../src/data/phases';
 
 describe('phases', () => {
-  it('has 8 phases (including unassigned)', () => {
-    expect(PHASES).toHaveLength(8);
+  it('has 9 phases (including unassigned and zero time)', () => {
+    expect(PHASES).toHaveLength(9);
   });
 
   it('phase 0 is Unassigned', () => {

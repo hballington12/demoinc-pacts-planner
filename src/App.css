@@ -208,6 +208,27 @@
   border-color: #e74c3c;
 }
 
+/* Pact badge */
+.pact-badge {
+  display: inline-block;
+  background: #e74c3c;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: bold;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.stat-pact {
+  color: #e74c3c !important;
+}
+
 /* Bulk actions */
 .task-bulk-actions {
   display: flex;

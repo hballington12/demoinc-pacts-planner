@@ -16,6 +16,14 @@ export const PHASES: Phase[] = [
   },
   {
     id: 1,
+    name: 'Zero Time',
+    shortName: 'Zero Time',
+    description:
+      'Tasks that complete themselves through normal play - no extra effort needed.',
+    color: '#14b8a6',
+  },
+  {
+    id: 2,
     name: 'Dead Weight',
     shortName: 'Dead Weight',
     description:
@@ -23,7 +31,7 @@ export const PHASES: Phase[] = [
     color: '#6b7280',
   },
   {
-    id: 2,
+    id: 3,
     name: 'Early Burners',
     shortName: 'Early Burn',
     description:
@@ -31,7 +39,7 @@ export const PHASES: Phase[] = [
     color: '#22c55e',
   },
   {
-    id: 3,
+    id: 4,
     name: 'Balancing Load',
     shortName: 'Balance',
     description:
@@ -39,7 +47,7 @@ export const PHASES: Phase[] = [
     color: '#3b82f6',
   },
   {
-    id: 4,
+    id: 5,
     name: 'Mid Game Juice',
     shortName: 'Mid Game',
     description:
@@ -47,7 +55,7 @@ export const PHASES: Phase[] = [
     color: '#a855f7',
   },
   {
-    id: 5,
+    id: 6,
     name: 'Bossing & Mid-Late Drags',
     shortName: 'Bossing',
     description:
@@ -55,7 +63,7 @@ export const PHASES: Phase[] = [
     color: '#ef4444',
   },
   {
-    id: 6,
+    id: 7,
     name: 'Pact Pushing',
     shortName: 'Pact Push',
     description:
@@ -63,7 +71,7 @@ export const PHASES: Phase[] = [
     color: '#f59e0b',
   },
   {
-    id: 7,
+    id: 8,
     name: 'Other Crap',
     shortName: 'Other',
     description:

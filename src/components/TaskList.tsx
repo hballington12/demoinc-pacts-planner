@@ -35,6 +35,7 @@ export function TaskList({
   const [filterRegion, setFilterRegion] = useState<string>('all');
   const [filterPhase, setFilterPhase] = useState<string>('all');
   const [filterStatus, setFilterStatus] = useState<string>('all');
+  const [filterPact, setFilterPact] = useState<string>('all');
   const [sortField, setSortField] = useState<SortField>('custom');
   const [sortDir, setSortDir] = useState<SortDir>('asc');
 
@@ -72,6 +73,11 @@ export function TaskList({
       result = result.filter((t) => completedTasks.includes(t.id));
     } else if (filterStatus === 'todo') {
       result = result.filter((t) => !completedTasks.includes(t.id));
+    }
+    if (filterPact === 'pact') {
+      result = result.filter((t) => t.pact);
+    } else if (filterPact === 'no-pact') {
+      result = result.filter((t) => !t.pact);
     }
 
     if (sortField === 'custom') {
@@ -111,6 +117,7 @@ export function TaskList({
     filterRegion,
     filterPhase,
     filterStatus,
+    filterPact,
     sortField,
     sortDir,
     taskPhases,
@@ -213,6 +220,14 @@ export function TaskList({
           <option value="all">All Status</option>
           <option value="todo">To Do</option>
           <option value="done">Done</option>
+        </select>
+        <select
+          value={filterPact}
+          onChange={(e) => setFilterPact(e.target.value)}
+        >
+          <option value="all">All Tasks</option>
+          <option value="pact">Pact Tasks Only</option>
+          <option value="no-pact">Non-Pact Only</option>
         </select>
       </div>
 

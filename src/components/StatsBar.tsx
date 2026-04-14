@@ -19,6 +19,11 @@ export function StatsBar({ tasks, completedTasks, taskPhases }: Props) {
     .filter((t) => completedTasks.includes(t.id))
     .reduce((sum, t) => sum + TIERS[t.tier], 0);
 
+  const totalPacts = tasks.filter((t) => t.pact).length;
+  const completedPacts = tasks.filter(
+    (t) => t.pact && completedTasks.includes(t.id)
+  ).length;
+
   const phaseCounts = PHASES.map((phase) => {
     const count = tasks.filter(
       (t) => (taskPhases[t.id] || 0) === phase.id
@@ -45,6 +50,12 @@ export function StatsBar({ tasks, completedTasks, taskPhases }: Props) {
             {completedPoints.toLocaleString()}/{totalPoints.toLocaleString()}
           </span>
           <span className="stat-label">Points</span>
+        </div>
+        <div className="stat">
+          <span className="stat-value stat-pact">
+            {completedPacts}/{totalPacts}
+          </span>
+          <span className="stat-label">Pacts</span>
         </div>
         <div className="stat">
           <span className="stat-value">

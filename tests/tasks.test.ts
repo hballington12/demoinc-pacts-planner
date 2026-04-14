@@ -14,6 +14,8 @@ describe('tasks data', () => {
       expect(task).toHaveProperty('tier');
       expect(task).toHaveProperty('region');
       expect(task).toHaveProperty('points');
+      expect(task).toHaveProperty('pact');
+      expect(typeof task.pact).toBe('boolean');
       expect(['easy', 'medium', 'hard', 'elite', 'master']).toContain(task.tier);
     }
   });
