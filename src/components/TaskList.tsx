@@ -14,7 +14,7 @@ interface Props {
   taskOrder: number[];
   onToggleComplete: (id: number) => void;
   onSetPhase: (id: number, phase: number) => void;
-  onReorder: (taskId: number, newIndex: number) => void;
+  onReorder: (draggedId: number, targetId: number) => void;
   selectedRegions: string[];
 }
 
@@ -149,18 +149,13 @@ export function TaskList({
   }, []);
 
   const handleDragEnd = useCallback(() => {
-    if (dragItem.current !== null && dragOverItem.current !== null) {
-      const targetIndex = filteredTasks.findIndex(
-        (t) => t.id === dragOverItem.current
-      );
-      if (targetIndex >= 0) {
-        onReorder(dragItem.current, targetIndex);
-      }
+    if (dragItem.current !== null && dragOverItem.current !== null && dragItem.current !== dragOverItem.current) {
+      onReorder(dragItem.current, dragOverItem.current);
     }
     dragItem.current = null;
     dragOverItem.current = null;
     setDragOverId(null);
-  }, [filteredTasks, onReorder]);
+  }, [onReorder]);
 
   const handleBulkPhase = useCallback(
     (phase: number) => {

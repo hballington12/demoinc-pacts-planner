@@ -51,15 +51,16 @@ function App() {
   }, []);
 
   const handleReorder = useCallback(
-    (taskId: number, newIndex: number) => {
+    (draggedId: number, targetId: number) => {
       setState((prev) => {
         const order = prev.taskOrder.length > 0
           ? [...prev.taskOrder]
           : tasks.map((t) => t.id);
-        const currentIndex = order.indexOf(taskId);
-        if (currentIndex === -1) return prev;
-        order.splice(currentIndex, 1);
-        order.splice(newIndex, 0, taskId);
+        const fromIndex = order.indexOf(draggedId);
+        const toIndex = order.indexOf(targetId);
+        if (fromIndex === -1 || toIndex === -1) return prev;
+        order.splice(fromIndex, 1);
+        order.splice(toIndex, 0, draggedId);
         return { ...prev, taskOrder: order };
       });
     },
