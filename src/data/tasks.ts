@@ -83,6 +83,7 @@ export const PACT_TASK_NAMES: ReadonlySet<string> = new Set([
   "Defeat 4 unique Echo Bosses",
   "Reach Combat Level 50",
   "Defeat Hueycoatl 1 Time",
+  "Defeat a TzHaar",
 ]);
 
 export const TIERS = {
@@ -749,7 +750,7 @@ export const tasks: Task[] = [
   { id: 574, name: "Complete the Medium Karamja Diary", description: "Complete all of the Medium tasks in the Karamja Achievement Diary.", tier: "medium", region: "Karamja", points: 30, pact: false },
   { id: 575, name: "Craft 50 Nature Runes", description: "Craft 50 Nature Runes from Essence at the Nature Altar.", tier: "medium", region: "Karamja", points: 30, pact: false },
   { id: 576, name: "Defeat a Black Demon on Karamja", description: "Defeat a Black Demon on Karamja.", tier: "medium", region: "Karamja", points: 30, pact: false },
-  { id: 577, name: "Defeat a TzHaar", description: "Defeat any TzHaar in Mor Ul Rek.", tier: "medium", region: "Karamja", points: 30, pact: false },
+  { id: 577, name: "Defeat a TzHaar", description: "Defeat any TzHaar in Mor Ul Rek.", tier: "medium", region: "Karamja", points: 30, pact: true },
   { id: 578, name: "Enter the Brimhaven Dungeon", description: "Enter the Brimhaven Dungeon.", tier: "medium", region: "Karamja", points: 30, pact: false },
   { id: 579, name: "Enter the Tai Bwo Wannai Hardwood Grove", description: "Enter the Hardwood Grove in Tai Bwo Wannai.", tier: "medium", region: "Karamja", points: 30, pact: false },
   { id: 580, name: "Equip a Full Tai Bwo Wannai Villager Set", description: "Equip a full set of Tai Bwo Wannai villager clothing.", tier: "medium", region: "Karamja", points: 30, pact: false },
