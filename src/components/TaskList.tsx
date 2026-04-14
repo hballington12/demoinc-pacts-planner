@@ -41,6 +41,7 @@ export function TaskList({
 
   const dragItem = useRef<number | null>(null);
   const dragOverItem = useRef<number | null>(null);
+  const [dragOverId, setDragOverId] = useState<number | null>(null);
 
   const availableRegions = useMemo(() => {
     const available = new Set(['General', 'Varlamore', 'Karamja']);
@@ -144,6 +145,7 @@ export function TaskList({
 
   const handleDragEnter = useCallback((taskId: number) => {
     dragOverItem.current = taskId;
+    setDragOverId(taskId);
   }, []);
 
   const handleDragEnd = useCallback(() => {
@@ -157,6 +159,7 @@ export function TaskList({
     }
     dragItem.current = null;
     dragOverItem.current = null;
+    setDragOverId(null);
   }, [filteredTasks, onReorder]);
 
   const handleBulkPhase = useCallback(
@@ -292,13 +295,10 @@ export function TaskList({
                 phase={taskPhases[task.id] || 0}
                 onToggleComplete={onToggleComplete}
                 onSetPhase={onSetPhase}
-                dragHandleProps={{
-                  draggable: true,
-                  onDragStart: () => handleDragStart(task.id),
-                  onDragEnter: () => handleDragEnter(task.id),
-                  onDragEnd: handleDragEnd,
-                  onDragOver: (e) => e.preventDefault(),
-                }}
+                isDragOver={dragOverId === task.id}
+                onDragStart={() => handleDragStart(task.id)}
+                onDragEnter={() => handleDragEnter(task.id)}
+                onDragEnd={handleDragEnd}
               />
             ))}
           </tbody>

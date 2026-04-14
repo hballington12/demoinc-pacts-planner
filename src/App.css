@@ -299,6 +299,10 @@
   background: #1e2740;
 }
 
+.task-row.drag-over {
+  border-top: 2px solid #e74c3c;
+}
+
 .task-row.completed {
   opacity: 0.5;
 }

@@ -8,7 +8,10 @@ interface Props {
   phase: number;
   onToggleComplete: (id: number) => void;
   onSetPhase: (id: number, phase: number) => void;
-  dragHandleProps?: React.HTMLAttributes<HTMLSpanElement>;
+  isDragOver: boolean;
+  onDragStart: () => void;
+  onDragEnter: () => void;
+  onDragEnd: () => void;
 }
 
 export function TaskRow({
@@ -17,15 +20,30 @@ export function TaskRow({
   phase,
   onToggleComplete,
   onSetPhase,
-  dragHandleProps,
+  isDragOver,
+  onDragStart,
+  onDragEnter,
+  onDragEnd,
 }: Props) {
   const points = TIERS[task.tier];
   const phaseInfo = PHASES[phase] || PHASES[0];
 
   return (
-    <tr className={`task-row ${completed ? 'completed' : ''}`}>
-      <td className="task-drag" {...dragHandleProps}>
-        <span className="drag-handle">&#x2630;</span>
+    <tr
+      className={`task-row ${completed ? 'completed' : ''} ${isDragOver ? 'drag-over' : ''}`}
+      onDragEnter={onDragEnter}
+      onDragOver={(e) => e.preventDefault()}
+      onDrop={(e) => { e.preventDefault(); onDragEnd(); }}
+    >
+      <td className="task-drag">
+        <span
+          className="drag-handle"
+          draggable
+          onDragStart={onDragStart}
+          onDragEnd={onDragEnd}
+        >
+          &#x2630;
+        </span>
       </td>
       <td className="task-check">
         <input
