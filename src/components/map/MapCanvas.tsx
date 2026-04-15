@@ -114,14 +114,31 @@ export function MapCanvas({
     ctx.translate(transform.offsetX, transform.offsetY);
     ctx.scale(transform.scale, transform.scale);
 
-    // Draw route lines
+    // Draw route lines (windowed: 3 behind last completed, 10 ahead)
+    const TRAIL_BEHIND = 3;
+    const TRAIL_AHEAD = 10;
     for (const [phaseStr, route] of Object.entries(routes)) {
       const phaseIdx = parseInt(phaseStr);
       if (!visiblePhases.has(phaseIdx)) continue;
       const color = colors[phaseIdx] || '#fff';
 
-      for (const segment of route.segments) {
-        if (segment.length < 2) continue;
+      // Find the last completed stop index in visitOrder
+      let lastCompletedIdx = -1;
+      for (let i = route.visitOrder.length - 1; i >= 0; i--) {
+        if (isCompleted(route.visitOrder[i])) {
+          lastCompletedIdx = i;
+          break;
+        }
+      }
+
+      // Segment i connects visitOrder[i] to visitOrder[i+1]
+      // Show segments from (lastCompleted - TRAIL_BEHIND) to (lastCompleted + TRAIL_AHEAD)
+      const startSeg = lastCompletedIdx < 0 ? 0 : Math.max(0, lastCompletedIdx - TRAIL_BEHIND);
+      const endSeg = lastCompletedIdx < 0 ? TRAIL_AHEAD : Math.min(route.segments.length, lastCompletedIdx + TRAIL_AHEAD);
+
+      for (let si = startSeg; si < endSeg; si++) {
+        const segment = route.segments[si];
+        if (!segment || segment.length < 2) continue;
         ctx.beginPath();
         ctx.moveTo(segment[0][0], segment[0][1]);
         for (let i = 1; i < segment.length; i++) {

@@ -11,6 +11,7 @@ interface Props {
   visiblePhases: Set<number>;
   onTogglePhase: (phase: number) => void;
   isCompleted: (id: number) => boolean;
+  onResetPhase: (colorIdx: number) => void;
 }
 
 const PHASES = [
@@ -26,6 +27,7 @@ export function MapSidebar({
   visiblePhases,
   onTogglePhase,
   isCompleted,
+  onResetPhase,
 }: Props) {
   return (
     <div className="map-sidebar">
@@ -56,6 +58,14 @@ export function MapSidebar({
                   style={{ width: `${pct}%`, background: colors[idx] }}
                 />
               </div>
+              {done > 0 && (
+                <button
+                  className="phase-reset-btn"
+                  onClick={(e) => { e.preventDefault(); onResetPhase(idx); }}
+                >
+                  Reset ({done})
+                </button>
+              )}
             </label>
           );
         })}

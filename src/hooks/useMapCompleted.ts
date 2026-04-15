@@ -34,5 +34,14 @@ export function useMapCompleted() {
     });
   }, []);
 
-  return { completed, isCompleted, toggleCompleted, completedCount: completed.size };
+  const resetIds = useCallback((ids: number[]) => {
+    setCompleted((prev) => {
+      const next = new Set(prev);
+      for (const id of ids) next.delete(id);
+      saveCompleted(next);
+      return next;
+    });
+  }, []);
+
+  return { completed, isCompleted, toggleCompleted, resetIds, completedCount: completed.size };
 }

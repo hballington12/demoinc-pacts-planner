@@ -16,7 +16,7 @@ interface HoverState {
 const BASE_URL = import.meta.env.BASE_URL;
 
 export function MapViewer() {
-  const { isCompleted, toggleCompleted } = useMapCompleted();
+  const { isCompleted, toggleCompleted, resetIds } = useMapCompleted();
   const [visiblePhases, setVisiblePhases] = useState<Set<number>>(new Set([0, 2, 3]));
   const [hover, setHover] = useState<HoverState | null>(null);
 
@@ -54,6 +54,10 @@ export function MapViewer() {
         visiblePhases={visiblePhases}
         onTogglePhase={togglePhase}
         isCompleted={isCompleted}
+        onResetPhase={(colorIdx) => {
+          const ids = mapData.markers.filter((m) => m.color === colorIdx).map((m) => m.id);
+          resetIds(ids);
+        }}
       />
       <div className="map-container">
         <MapCanvas
