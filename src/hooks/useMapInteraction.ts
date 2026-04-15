@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef } from 'react';
+import { useState, useCallback, useRef, useEffect } from 'react';
 
 interface MapTransform {
   offsetX: number;
@@ -17,6 +17,7 @@ export function useMapInteraction(initialScale = 0.3) {
   });
 
   const dragRef = useRef<{ startX: number; startY: number; ox: number; oy: number } | null>(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   const onMouseDown = useCallback((e: React.MouseEvent) => {
     if (e.button !== 0) return;
@@ -29,11 +30,12 @@ export function useMapInteraction(initialScale = 0.3) {
   }, [transform.offsetX, transform.offsetY]);
 
   const onMouseMove = useCallback((e: React.MouseEvent) => {
-    if (!dragRef.current) return;
+    const drag = dragRef.current;
+    if (!drag) return;
     setTransform((t) => ({
       ...t,
-      offsetX: dragRef.current!.ox + (e.clientX - dragRef.current!.startX),
-      offsetY: dragRef.current!.oy + (e.clientY - dragRef.current!.startY),
+      offsetX: drag.ox + (e.clientX - drag.startX),
+      offsetY: drag.oy + (e.clientY - drag.startY),
     }));
   }, []);
 
@@ -41,25 +43,34 @@ export function useMapInteraction(initialScale = 0.3) {
     dragRef.current = null;
   }, []);
 
-  const onWheel = useCallback((e: React.WheelEvent) => {
-    e.preventDefault();
-    const rect = (e.target as HTMLElement).getBoundingClientRect();
-    const cx = e.clientX - rect.left;
-    const cy = e.clientY - rect.top;
-    const factor = e.deltaY > 0 ? 1 / 1.15 : 1.15;
+  // Use native wheel listener with {passive: false} to allow preventDefault
+  useEffect(() => {
+    const el = canvasRef.current;
+    if (!el) return;
 
-    setTransform((t) => {
-      const newScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, t.scale * factor));
-      const ratio = newScale / t.scale;
-      return {
-        scale: newScale,
-        offsetX: cx - ratio * (cx - t.offsetX),
-        offsetY: cy - ratio * (cy - t.offsetY),
-      };
-    });
+    const handler = (e: WheelEvent) => {
+      e.preventDefault();
+      const rect = el.getBoundingClientRect();
+      const cx = e.clientX - rect.left;
+      const cy = e.clientY - rect.top;
+      const factor = e.deltaY > 0 ? 1 / 1.15 : 1.15;
+
+      setTransform((t) => {
+        const newScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, t.scale * factor));
+        const ratio = newScale / t.scale;
+        return {
+          scale: newScale,
+          offsetX: cx - ratio * (cx - t.offsetX),
+          offsetY: cy - ratio * (cy - t.offsetY),
+        };
+      });
+    };
+
+    el.addEventListener('wheel', handler, { passive: false });
+    return () => el.removeEventListener('wheel', handler);
   }, []);
 
   const isDragging = useCallback(() => dragRef.current !== null, []);
 
-  return { transform, onMouseDown, onMouseMove, onMouseUp, onWheel, isDragging };
+  return { transform, canvasRef, onMouseDown, onMouseMove, onMouseUp, isDragging };
 }

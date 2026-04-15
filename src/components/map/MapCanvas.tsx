@@ -38,9 +38,8 @@ export function MapCanvas({
   onHoverMarker,
   mapImageUrl,
 }: Props) {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
   const imgRef = useRef<HTMLImageElement | null>(null);
-  const { transform, onMouseDown, onMouseMove, onMouseUp, onWheel, isDragging } =
+  const { transform, canvasRef, onMouseDown, onMouseMove, onMouseUp, isDragging } =
     useMapInteraction(0.25);
   const clickStartRef = useRef<{ x: number; y: number } | null>(null);
 
@@ -133,28 +132,43 @@ export function MapCanvas({
         ctx.stroke();
       }
 
-      // Number the stops
+    }
+
+    ctx.restore();
+
+    // Number the stops in screen space
+    for (const [phaseStr, route] of Object.entries(routes)) {
+      const phaseIdx = parseInt(phaseStr);
+      if (!visiblePhases.has(phaseIdx)) continue;
+      const color = colors[phaseIdx] || '#fff';
       const phaseMarkers = markers.filter(
         (m) => m.color === phaseIdx && !isCompleted(m.id)
       );
-      ctx.font = `bold ${Math.max(8, 10 / transform.scale)}px Arial`;
+      ctx.font = 'bold 10px Arial';
       ctx.textAlign = 'center';
       for (let i = 0; i < route.visitOrder.length; i++) {
         const idx = route.visitOrder[i];
         if (idx < phaseMarkers.length) {
           const m = phaseMarkers[idx];
+          const sx = m.x * transform.scale + transform.offsetX;
+          const sy = m.y * transform.scale + transform.offsetY;
+          if (sx < -20 || sx > w + 20 || sy < -20 || sy > h + 20) continue;
           ctx.fillStyle = color;
-          ctx.fillText(String(i + 1), m.x, m.y - MARKER_RADIUS - 4 / transform.scale);
+          ctx.fillText(String(i + 1), sx, sy - MARKER_RADIUS - 4);
         }
       }
     }
 
-    // Draw markers
+    // Draw markers in screen space (constant size regardless of zoom)
     const r = MARKER_RADIUS;
     for (const m of markers) {
+      const sx = m.x * transform.scale + transform.offsetX;
+      const sy = m.y * transform.scale + transform.offsetY;
+      if (sx < -20 || sx > w + 20 || sy < -20 || sy > h + 20) continue;
+
       const done = isCompleted(m.id);
       ctx.beginPath();
-      ctx.arc(m.x, m.y, r, 0, Math.PI * 2);
+      ctx.arc(sx, sy, r, 0, Math.PI * 2);
       if (done) {
         ctx.fillStyle = '#333';
         ctx.strokeStyle = '#555';
@@ -163,19 +177,17 @@ export function MapCanvas({
         ctx.strokeStyle = '#fff';
       }
       ctx.fill();
-      ctx.lineWidth = 2 / transform.scale;
+      ctx.lineWidth = 2;
       ctx.stroke();
 
       if (done) {
         ctx.fillStyle = '#888';
-        ctx.font = `bold ${9 / transform.scale}px Arial`;
+        ctx.font = 'bold 9px Arial';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillText('\u2713', m.x, m.y);
+        ctx.fillText('\u2713', sx, sy);
       }
     }
-
-    ctx.restore();
   }, [transform, markers, routes, visiblePhases, colors, isCompleted]);
 
   // Handle resize
@@ -245,7 +257,6 @@ export function MapCanvas({
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
       onMouseLeave={() => { onMouseUp(); onHoverMarker(null, 0, 0); }}
-      onWheel={onWheel}
       style={{ cursor: isDragging() ? 'grabbing' : 'grab' }}
     />
   );
