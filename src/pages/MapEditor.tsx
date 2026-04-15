@@ -51,6 +51,7 @@ export function MapEditor() {
   const [pending, setPending] = useState<PendingMarker | null>(null);
   const [inputText, setInputText] = useState('');
   const [showConfirmClear, setShowConfirmClear] = useState(false);
+  const [imgLoaded, setImgLoaded] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const imgRef = useRef<HTMLImageElement | null>(null);
   const { transform, canvasRef, onMouseDown, onMouseMove, onMouseUp, isDragging } =
@@ -62,7 +63,7 @@ export function MapEditor() {
   useEffect(() => {
     const img = new Image();
     img.src = `${BASE_URL}map-cropped.jpg`;
-    img.onload = () => { imgRef.current = img; };
+    img.onload = () => { imgRef.current = img; setImgLoaded(true); };
   }, []);
 
   // Focus input when pending marker appears
@@ -226,7 +227,7 @@ export function MapEditor() {
       ctx.stroke();
       ctx.globalAlpha = 1.0;
     }
-  }, [transform, markers, canvasRef, pending, selectedColor]);
+  }, [transform, markers, canvasRef, pending, selectedColor, imgLoaded]);
 
   const exportMarkers = useCallback(() => {
     const blob = new Blob([JSON.stringify(markers, null, 2)], { type: 'application/json' });

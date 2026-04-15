@@ -1,4 +1,4 @@
-import { useRef, useEffect, useCallback } from 'react';
+import { useRef, useEffect, useCallback, useState } from 'react';
 import { useMapInteraction } from '../../hooks/useMapInteraction';
 
 interface MapMarker {
@@ -39,6 +39,7 @@ export function MapCanvas({
   mapImageUrl,
 }: Props) {
   const imgRef = useRef<HTMLImageElement | null>(null);
+  const [imgLoaded, setImgLoaded] = useState(false);
   const { transform, canvasRef, onMouseDown, onMouseMove, onMouseUp, isDragging } =
     useMapInteraction(0.25);
   const clickStartRef = useRef<{ x: number; y: number } | null>(null);
@@ -49,6 +50,7 @@ export function MapCanvas({
     img.src = mapImageUrl;
     img.onload = () => {
       imgRef.current = img;
+      setImgLoaded(true);
     };
   }, [mapImageUrl]);
 
@@ -203,7 +205,7 @@ export function MapCanvas({
         ctx.fillText('\u2713', sx, sy);
       }
     }
-  }, [transform, markers, routes, visiblePhases, colors, isCompleted]);
+  }, [transform, markers, routes, visiblePhases, colors, isCompleted, imgLoaded]);
 
   // Handle resize
   useEffect(() => {
