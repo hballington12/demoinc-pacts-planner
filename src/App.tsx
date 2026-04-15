@@ -89,6 +89,7 @@ function App() {
         <h1>Demonic Pacts Planner</h1>
         <p className="subtitle">OSRS Leagues VI Task Planner</p>
         <div className="header-actions">
+          <a href="#/map" className="share-toggle-btn">Map View</a>
           <SharePanel state={state} onImport={handleImport} />
           <button className="reset-btn" onClick={handleReset}>
             Reset

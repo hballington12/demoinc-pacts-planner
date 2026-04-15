@@ -1,0 +1,1535 @@
+[
+  {
+    "x": 2225.9599811072044,
+    "y": 3409.855129498188,
+    "color": 0,
+    "text": "activate prayer",
+    "completed": false
+  },
+  {
+    "x": 2098.4323368148193,
+    "y": 3222.10712532742,
+    "color": 0,
+    "text": "hit dummy",
+    "completed": false
+  },
+  {
+    "x": 1908.8310060225429,
+    "y": 3334.6957882226943,
+    "color": 0,
+    "text": "feed dog bones",
+    "completed": false
+  },
+  {
+    "x": 1053.6481911970113,
+    "y": 3342.3362652118926,
+    "color": 0,
+    "text": "kill frog",
+    "completed": false
+  },
+  {
+    "x": 2022.035873344933,
+    "y": 3410.668242254715,
+    "color": 0,
+    "text": "kill rat",
+    "completed": false
+  },
+  {
+    "x": 1581.0791650115996,
+    "y": 3419.120158921381,
+    "color": 0,
+    "text": "kill scorpion",
+    "completed": false
+  },
+  {
+    "x": 1666.8211133527454,
+    "y": 3703.34866403336,
+    "color": 0,
+    "text": "buy torch + light",
+    "completed": false
+  },
+  {
+    "x": 2343.562322730097,
+    "y": 3794.747755135238,
+    "color": 0,
+    "text": "mine clay",
+    "completed": false
+  },
+  {
+    "x": 1576.6564498134305,
+    "y": 3402.1423968019044,
+    "color": 0,
+    "text": "mine 5 tin",
+    "completed": false
+  },
+  {
+    "x": 1236.3354939193425,
+    "y": 2710.9390945373625,
+    "color": 0,
+    "text": "pick 6 flax",
+    "completed": false
+  },
+  {
+    "x": 1881.4093375076861,
+    "y": 3420.432645120562,
+    "color": 0,
+    "text": "pick 6 spuds",
+    "completed": false
+  },
+  {
+    "x": 1980.4093375076861,
+    "y": 3435.099311787229,
+    "color": 0,
+    "text": "pick 6 cabbage",
+    "completed": false
+  },
+  {
+    "x": 2027.0760041743526,
+    "y": 3458.099311787229,
+    "color": 0,
+    "text": "pick sweetcorn",
+    "completed": false
+  },
+  {
+    "x": 2158.7426708410194,
+    "y": 3357.7659784538955,
+    "color": 0,
+    "text": "pickpocket citizen",
+    "completed": false
+  },
+  {
+    "x": 1776.0760041743526,
+    "y": 3291.432645120562,
+    "color": 0,
+    "text": "plant potato seeds in allotement",
+    "completed": false
+  },
+  {
+    "x": 1785.4093375076861,
+    "y": 3284.7659784538955,
+    "color": 0,
+    "text": "protect crops",
+    "completed": false
+  },
+  {
+    "x": 1773.7426708410194,
+    "y": 3279.432645120562,
+    "color": 0,
+    "text": "rake flower patch",
+    "completed": false
+  },
+  {
+    "x": 2157.409337507686,
+    "y": 3328.099311787229,
+    "color": 0,
+    "text": "sell silk to trader",
+    "completed": false
+  },
+  {
+    "x": 752.7857541743526,
+    "y": 3383.4483534538954,
+    "color": 0,
+    "text": "buy 6 iron arrows and shoot",
+    "completed": false
+  },
+  {
+    "x": 1581.6043593493787,
+    "y": 3391.408319095589,
+    "color": 0,
+    "text": "mine 1 copper and smelt into bronze bar",
+    "completed": false
+  },
+  {
+    "x": 1243.2079926342908,
+    "y": 2726.795357380443,
+    "color": 0,
+    "text": "spin ball of wool",
+    "completed": false
+  },
+  {
+    "x": 2178.0864555509565,
+    "y": 3338.4003284221094,
+    "color": 0,
+    "text": "steal bread",
+    "completed": false
+  },
+  {
+    "x": 1304.7454620340043,
+    "y": 2570.492322342707,
+    "color": 0,
+    "text": "make plank",
+    "completed": false
+  },
+  {
+    "x": 2136.431743511112,
+    "y": 3352.1791801084096,
+    "color": 0,
+    "text": "turn off run",
+    "completed": false
+  },
+  {
+    "x": 1879.4317435111122,
+    "y": 3310.8458467750766,
+    "color": 0,
+    "text": "milk buffalo",
+    "completed": false
+  },
+  {
+    "x": 1674.614422677779,
+    "y": 3691.6094446917427,
+    "color": 0,
+    "text": "equip steel armour piece",
+    "completed": false
+  },
+  {
+    "x": 2448.937156396573,
+    "y": 3494.527760905891,
+    "color": 0,
+    "text": "buy mace and kill 5 things",
+    "completed": false
+  },
+  {
+    "x": 1945.6038230632394,
+    "y": 3328.1944275725577,
+    "color": 0,
+    "text": "pick 6 wheat (keep)",
+    "completed": false
+  },
+  {
+    "x": 2084.270489729906,
+    "y": 3530.8610942392243,
+    "color": 0,
+    "text": "make flour",
+    "completed": false
+  },
+  {
+    "x": 2333.937156396573,
+    "y": 3365.1944275725577,
+    "color": 0,
+    "text": "fish old boot",
+    "completed": false
+  },
+  {
+    "x": 2171.6038230632394,
+    "y": 3358.1944275725577,
+    "color": 0,
+    "text": "28 coin pouches at once",
+    "completed": false
+  },
+  {
+    "x": 2079.6038230632394,
+    "y": 3262.8610942392243,
+    "color": 0,
+    "text": "sac something to the coffer",
+    "completed": false
+  },
+  {
+    "x": 5544.223649505924,
+    "y": 3629.0959248103104,
+    "color": 0,
+    "text": "catch bwanji",
+    "completed": false
+  },
+  {
+    "x": 5895.2083708600885,
+    "y": 3211.8241760603105,
+    "color": 0,
+    "text": "fill crate",
+    "completed": false
+  },
+  {
+    "x": 5755.541704193422,
+    "y": 3194.8241760603105,
+    "color": 0,
+    "text": "kill snake",
+    "completed": false
+  },
+  {
+    "x": 5356.2083708600885,
+    "y": 3165.490842726977,
+    "color": 0,
+    "text": "pick pineapple",
+    "completed": false
+  },
+  {
+    "x": 5354.2083708600885,
+    "y": 3210.490842726977,
+    "color": 0,
+    "text": "enter brimhaven dungeon",
+    "completed": false
+  },
+  {
+    "x": 5626.2083708600885,
+    "y": 3717.490842726977,
+    "color": 0,
+    "text": "sleep at the inn",
+    "completed": false
+  },
+  {
+    "x": 2214.5611095369645,
+    "y": 3254.938040799954,
+    "color": 0,
+    "text": "bow near quetzal",
+    "completed": false
+  },
+  {
+    "x": 2222.5611095369645,
+    "y": 3255.938040799954,
+    "color": 0,
+    "text": "travel using quetzal",
+    "completed": false
+  },
+  {
+    "x": 879.9643282869648,
+    "y": 3354.2813949666197,
+    "color": 0,
+    "text": "chop a tree in ranforest",
+    "completed": false
+  },
+  {
+    "x": 2150.923160318394,
+    "y": 3345.3138844434047,
+    "color": 0,
+    "text": "cry near child",
+    "completed": false
+  },
+  {
+    "x": 697.5223420894473,
+    "y": 3333.5065248059377,
+    "color": 0,
+    "text": "dance near bard",
+    "completed": false
+  },
+  {
+    "x": 1837.0138167769464,
+    "y": 3314.382428555937,
+    "color": 0,
+    "text": "defeat buffalo",
+    "completed": false
+  },
+  {
+    "x": 2059.368348026946,
+    "y": 3244.3711535559373,
+    "color": 0,
+    "text": "defeat guard underground",
+    "completed": false
+  },
+  {
+    "x": 2342.368348026946,
+    "y": 3273.3711535559373,
+    "color": 0,
+    "text": "defeat seagull",
+    "completed": false
+  },
+  {
+    "x": 2343.035014693613,
+    "y": 3285.3711535559373,
+    "color": 0,
+    "text": "charter to sunset coast",
+    "completed": false
+  },
+  {
+    "x": 5483.350852193611,
+    "y": 3138.218853555937,
+    "color": 0,
+    "text": "defeat thief",
+    "completed": false
+  },
+  {
+    "x": 1258.5870782705865,
+    "y": 3514.948861280553,
+    "color": 0,
+    "text": "defeat imp in basement",
+    "completed": false
+  },
+  {
+    "x": 1245.2537449372533,
+    "y": 3564.61552794722,
+    "color": 0,
+    "text": "pick cup of tea",
+    "completed": false
+  },
+  {
+    "x": 1252.4531532705867,
+    "y": 2718.774842530553,
+    "color": 0,
+    "text": "drink cup of tea",
+    "completed": false
+  },
+  {
+    "x": 2260.8036132787497,
+    "y": 3412.5960709615283,
+    "color": 0,
+    "text": "drink from bird bath",
+    "completed": false
+  },
+  {
+    "x": 2260.8036132787497,
+    "y": 3327.929404294862,
+    "color": 0,
+    "text": "buy and drink moon-lite",
+    "completed": false
+  },
+  {
+    "x": 2054.8036132787497,
+    "y": 3232.262737628195,
+    "color": 0,
+    "text": "exit via secret passage",
+    "completed": false
+  },
+  {
+    "x": 1676.9311107162493,
+    "y": 3672.4081155240283,
+    "color": 0,
+    "text": "fill bucket w/ sand",
+    "completed": false
+  },
+  {
+    "x": 2122.0482127995824,
+    "y": 3312.1386988573618,
+    "color": 0,
+    "text": "fill something at pump",
+    "completed": false
+  },
+  {
+    "x": 2266.7148794662494,
+    "y": 3331.1386988573618,
+    "color": 0,
+    "text": "buy 2 stea, eat one give other to ol",
+    "completed": false
+  },
+  {
+    "x": 1833.169902382916,
+    "y": 2733.209350940696,
+    "color": 0,
+    "text": "inspect green flame",
+    "completed": false
+  },
+  {
+    "x": 831.5723232162495,
+    "y": 3381.5076676073622,
+    "color": 0,
+    "text": "pet bird thing",
+    "completed": false
+  },
+  {
+    "x": 2228.164072149322,
+    "y": 3255.829960668559,
+    "color": 0,
+    "text": "pet renu",
+    "completed": false
+  },
+  {
+    "x": 2249.164072149322,
+    "y": 3408.163294001892,
+    "color": 0,
+    "text": "pet xolo",
+    "completed": false
+  },
+  {
+    "x": 2214.164072149322,
+    "y": 3420.829960668559,
+    "color": 0,
+    "text": "salute next to statue",
+    "completed": false
+  },
+  {
+    "x": 2166.8307388159883,
+    "y": 3310.4966273352256,
+    "color": 0,
+    "text": "home tele to yama lair and scatter some ashes",
+    "completed": false
+  },
+  {
+    "x": 2003.1640721493216,
+    "y": 3383.829960668559,
+    "color": 0,
+    "text": "kill imp w/ earth spell and pick ashes",
+    "completed": false
+  },
+  {
+    "x": 1805.8683283993216,
+    "y": 3321.897641918559,
+    "color": 0,
+    "text": "shear alpaca, spin wool later",
+    "completed": false
+  },
+  {
+    "x": 2370.7973471493215,
+    "y": 3523.0333606685595,
+    "color": 0,
+    "text": "sit near stolen cabbage",
+    "completed": false
+  },
+  {
+    "x": 2503.7218221493213,
+    "y": 3353.3797544185595,
+    "color": 0,
+    "text": "talk to gladiator",
+    "completed": false
+  },
+  {
+    "x": 1317.0149346545302,
+    "y": 2933.650763121685,
+    "color": 0,
+    "text": "take boat",
+    "completed": false
+  },
+  {
+    "x": 2438.935298332684,
+    "y": 3708.3191062605706,
+    "color": 2,
+    "text": "10 cod",
+    "completed": false
+  },
+  {
+    "x": 2434.268631666017,
+    "y": 3722.3191062605706,
+    "color": 2,
+    "text": "20 mackerel",
+    "completed": false
+  },
+  {
+    "x": 2434.935298332684,
+    "y": 3738.3191062605706,
+    "color": 2,
+    "text": "herring",
+    "completed": false
+  },
+  {
+    "x": 2432.268631666017,
+    "y": 3763.6524395939036,
+    "color": 2,
+    "text": "anchovy",
+    "completed": false
+  },
+  {
+    "x": 5687.4136932285155,
+    "y": 3756.5457527189037,
+    "color": 2,
+    "text": "catch salmon",
+    "completed": false
+  },
+  {
+    "x": 2431.69140374935,
+    "y": 3748.449683239737,
+    "color": 2,
+    "text": "shrimp and cook",
+    "completed": false
+  },
+  {
+    "x": 2097.5572370826835,
+    "y": 3371.4138499064034,
+    "color": 2,
+    "text": "buy apron (cook something)",
+    "completed": false
+  },
+  {
+    "x": 2303.2096954160165,
+    "y": 3400.2992665730703,
+    "color": 0,
+    "text": "kill 5 bunny, cook and eat one",
+    "completed": false
+  },
+  {
+    "x": 2322.981070416017,
+    "y": 3405.3688499064037,
+    "color": 2,
+    "text": "burn something",
+    "completed": false
+  },
+  {
+    "x": 1325.972286487892,
+    "y": 2649.363603012133,
+    "color": 2,
+    "text": "buy steel axe, chop logs",
+    "completed": false
+  },
+  {
+    "x": 1321.085768518647,
+    "y": 4067.2227558230475,
+    "color": 2,
+    "text": "buy steel pickaxe",
+    "completed": false
+  },
+  {
+    "x": 1315.6348471221932,
+    "y": 2644.0265087501143,
+    "color": 2,
+    "text": "burn oak logs",
+    "completed": false
+  },
+  {
+    "x": 1333.6348471221932,
+    "y": 2652.693175416781,
+    "color": 2,
+    "text": "burn logs",
+    "completed": false
+  },
+  {
+    "x": 1322.30151378886,
+    "y": 2659.3598420834473,
+    "color": 2,
+    "text": "50 mapl logs",
+    "completed": false
+  },
+  {
+    "x": 1232.9681804555264,
+    "y": 2554.693175416781,
+    "color": 2,
+    "text": "admire scenery",
+    "completed": false
+  },
+  {
+    "x": 1235.6348471221932,
+    "y": 2568.0265087501143,
+    "color": 2,
+    "text": "step on ent trail",
+    "completed": false
+  },
+  {
+    "x": 1241.6348471221932,
+    "y": 2557.0265087501143,
+    "color": 2,
+    "text": "vale totems miniquest",
+    "completed": false
+  },
+  {
+    "x": 2078.750588372193,
+    "y": 3464.95519669803,
+    "color": 0,
+    "text": "defeat chicken",
+    "completed": false
+  },
+  {
+    "x": 1618.9323842055264,
+    "y": 3305.293413364697,
+    "color": 2,
+    "text": "kill dire wolf (during meat and greet)",
+    "completed": false
+  },
+  {
+    "x": 5241.16908261439,
+    "y": 3056.9675361009995,
+    "color": 2,
+    "text": "karamja diary (10 agil)",
+    "completed": false
+  },
+  {
+    "x": 5321.502415947724,
+    "y": 3001.9675361009995,
+    "color": 2,
+    "text": "karamja diary (40 mining)",
+    "completed": false
+  },
+  {
+    "x": 5454.378249281057,
+    "y": 3739.9500361009987,
+    "color": 2,
+    "text": "diary (15 agil)",
+    "completed": false
+  },
+  {
+    "x": 5839.66658261439,
+    "y": 3121.0200361009993,
+    "color": 2,
+    "text": "diary (bring net)",
+    "completed": false
+  },
+  {
+    "x": 5392.66158261439,
+    "y": 3303.5250361009994,
+    "color": 2,
+    "text": "diary (seaweed)",
+    "completed": false
+  },
+  {
+    "x": 5682.28908261439,
+    "y": 3163.3400361009994,
+    "color": 2,
+    "text": "diary (attempt fight cave)",
+    "completed": false
+  },
+  {
+    "x": 5683.1707492810565,
+    "y": 3153.2008694343326,
+    "color": 2,
+    "text": "pact: kill tzaar",
+    "completed": false
+  },
+  {
+    "x": 5589.7140826143905,
+    "y": 3311.0192027676662,
+    "color": 2,
+    "text": "diary: kill joggy boy",
+    "completed": false
+  },
+  {
+    "x": 5357.394915947723,
+    "y": 3199.4883694343325,
+    "color": 2,
+    "text": "kill black demon (12 agil, axe, 34 wc)",
+    "completed": false
+  },
+  {
+    "x": 1818.1431050883498,
+    "y": 3723.6148715228737,
+    "color": 2,
+    "text": "kill jaguar 0 damage",
+    "completed": false
+  },
+  {
+    "x": 1963.6401467550163,
+    "y": 3782.4220381895407,
+    "color": 2,
+    "text": "kill hill giant",
+    "completed": false
+  },
+  {
+    "x": 2202.7744845904845,
+    "y": 2990.870281206715,
+    "color": 8,
+    "text": "need heart of darkness to do these",
+    "completed": false
+  },
+  {
+    "x": 5467.717467564766,
+    "y": 3432.0630473753913,
+    "color": 2,
+    "text": "dense jungle (35 wc)",
+    "completed": false
+  },
+  {
+    "x": 1927.9167555463084,
+    "y": 3365.962063234645,
+    "color": 2,
+    "text": "churn butter (38 cook)",
+    "completed": false
+  },
+  {
+    "x": 1930.9167555463084,
+    "y": 3360.6287299013115,
+    "color": 2,
+    "text": "potato with butter (39 cook)",
+    "completed": false
+  },
+  {
+    "x": 730.3015617963083,
+    "y": 3317.4274778179783,
+    "color": 0,
+    "text": "buy purple dye",
+    "completed": false
+  },
+  {
+    "x": 2099.744859712974,
+    "y": 3364.953667401312,
+    "color": 0,
+    "text": "buy cape and dye it purple (tal teklan)",
+    "completed": false
+  },
+  {
+    "x": 1980.0781930463074,
+    "y": 3450.953667401312,
+    "color": 0,
+    "text": "pick + eat onion",
+    "completed": false
+  },
+  {
+    "x": 2231.1637382001886,
+    "y": 3364.937154506531,
+    "color": 2,
+    "text": "purchase poh",
+    "completed": false
+  },
+  {
+    "x": 5392.015979832498,
+    "y": 3137.6445684107443,
+    "color": 2,
+    "text": "enter poh, build room",
+    "completed": false
+  },
+  {
+    "x": 5392.015979832498,
+    "y": 3131.977901744078,
+    "color": 2,
+    "text": "build oak larder",
+    "completed": false
+  },
+  {
+    "x": 2238.4914188097596,
+    "y": 3373.4721608843115,
+    "color": 2,
+    "text": "redecorate poh",
+    "completed": false
+  },
+  {
+    "x": 2344.8914188097597,
+    "y": 3803.7888275509777,
+    "color": 2,
+    "text": "10 silver",
+    "completed": false
+  },
+  {
+    "x": 2333.8914188097597,
+    "y": 3814.122160884311,
+    "color": 2,
+    "text": "50 iron",
+    "completed": false
+  },
+  {
+    "x": 2356.8914188097597,
+    "y": 3801.7888275509777,
+    "color": 2,
+    "text": "coal",
+    "completed": false
+  },
+  {
+    "x": 1335.8970450958645,
+    "y": 2635.828566989181,
+    "color": 2,
+    "text": "10 steel bolt (unf)",
+    "completed": false
+  },
+  {
+    "x": 1345.5637117625313,
+    "y": 2642.828566989181,
+    "color": 2,
+    "text": "150 iron arrowtips",
+    "completed": false
+  },
+  {
+    "x": 1347.8970450958645,
+    "y": 2634.4952336558476,
+    "color": 2,
+    "text": "steel 2h sword",
+    "completed": false
+  },
+  {
+    "x": 1237.292978429198,
+    "y": 3264.5632357391805,
+    "color": 2,
+    "text": "5 crimson swifts",
+    "completed": false
+  },
+  {
+    "x": 926.6263117625313,
+    "y": 3361.896569072514,
+    "color": 2,
+    "text": "15 tropical wagtail, 20 bird snares",
+    "completed": false
+  },
+  {
+    "x": 2073.3363461849835,
+    "y": 3648.85301263208,
+    "color": 2,
+    "text": "baby impling",
+    "completed": false
+  },
+  {
+    "x": 2081.6696795183166,
+    "y": 3653.1863459654137,
+    "color": 2,
+    "text": "50 implings",
+    "completed": false
+  },
+  {
+    "x": 2063.00301285165,
+    "y": 3661.5196792987467,
+    "color": 2,
+    "text": "200 implings",
+    "completed": false
+  },
+  {
+    "x": 1366.9698509875882,
+    "y": 2574.1368442607272,
+    "color": 2,
+    "text": "ruby harvest (buy shit @ hunter guild)",
+    "completed": false
+  },
+  {
+    "x": 1809.125684320921,
+    "y": 3495.4785109273935,
+    "color": 2,
+    "text": "buy hunter shit",
+    "completed": false
+  },
+  {
+    "x": 1343.3131640032132,
+    "y": 2651.5769294534352,
+    "color": 2,
+    "text": "smith and equip iron dagger",
+    "completed": false
+  },
+  {
+    "x": 1368.6072110134592,
+    "y": 2587.366471583349,
+    "color": 2,
+    "text": "25 maple longbow",
+    "completed": false
+  },
+  {
+    "x": 1346.9405443467924,
+    "y": 2596.6998049166823,
+    "color": 2,
+    "text": "25 oak stock",
+    "completed": false
+  },
+  {
+    "x": 1314.607211013459,
+    "y": 2700.366471583349,
+    "color": 2,
+    "text": "50 willow longbow",
+    "completed": false
+  },
+  {
+    "x": 1303.9405443467924,
+    "y": 2692.033138250016,
+    "color": 2,
+    "text": "willow shortbow",
+    "completed": false
+  },
+  {
+    "x": 1320.2738776801257,
+    "y": 2682.366471583349,
+    "color": 2,
+    "text": "oak shortbow",
+    "completed": false
+  },
+  {
+    "x": 5711.368894626495,
+    "y": 3746.707882615277,
+    "color": 2,
+    "text": "take shortcut",
+    "completed": false
+  },
+  {
+    "x": 1303.6086734449439,
+    "y": 2679.0361219965794,
+    "color": 2,
+    "text": "willow shield + equip",
+    "completed": false
+  },
+  {
+    "x": 1215.5622317782775,
+    "y": 3938.6729574132455,
+    "color": 2,
+    "text": "fill grape barrel",
+    "completed": false
+  },
+  {
+    "x": 2411.0010523763567,
+    "y": 3383.524364838056,
+    "color": 2,
+    "text": "use pottery oven",
+    "completed": false
+  },
+  {
+    "x": 2092.0010523763567,
+    "y": 3644.6743648380557,
+    "color": 2,
+    "text": "kill cow for cowhide, see auburnvale",
+    "completed": false
+  },
+  {
+    "x": 1235.1272190430234,
+    "y": 2594.7213231713895,
+    "color": 2,
+    "text": "make leather -> leather chaps",
+    "completed": false
+  },
+  {
+    "x": 2417.9277991911426,
+    "y": 3367.332315084596,
+    "color": 0,
+    "text": "buy needle, thread, etc.",
+    "completed": false
+  },
+  {
+    "x": 1337.9185578400873,
+    "y": 2681.1210154126366,
+    "color": 3,
+    "text": "burn 100 willow logs",
+    "completed": false
+  },
+  {
+    "x": 1331.7468911734204,
+    "y": 2689.9376820793036,
+    "color": 3,
+    "text": "burn 25 maples",
+    "completed": false
+  },
+  {
+    "x": 5822.289821023065,
+    "y": 3316.24704178681,
+    "color": 3,
+    "text": "50 karams",
+    "completed": false
+  },
+  {
+    "x": 5841.669580470043,
+    "y": 3101.8110242932908,
+    "color": 3,
+    "text": "100 swordfish",
+    "completed": false
+  },
+  {
+    "x": 5829.33624713671,
+    "y": 3110.1443576266242,
+    "color": 3,
+    "text": "50 tuna + cook",
+    "completed": false
+  },
+  {
+    "x": 5839.002913803376,
+    "y": 3091.1443576266242,
+    "color": 3,
+    "text": "75 lobsters",
+    "completed": false
+  },
+  {
+    "x": 912.7652267278492,
+    "y": 3271.648660695087,
+    "color": 3,
+    "text": "75 trout",
+    "completed": false
+  },
+  {
+    "x": 2131.686302102849,
+    "y": 3660.689409877378,
+    "color": 3,
+    "text": "catch jerboa (39 hunter)",
+    "completed": false
+  },
+  {
+    "x": 1981.8029687695157,
+    "y": 3685.222743210711,
+    "color": 3,
+    "text": "catch pyre fox",
+    "completed": false
+  },
+  {
+    "x": 1346.0786874153491,
+    "y": 2684.427183627378,
+    "color": 3,
+    "text": "chop 100 willows",
+    "completed": false
+  },
+  {
+    "x": 1797.7155783528494,
+    "y": 3535.7753173773776,
+    "color": 3,
+    "text": "1, 10 25 rumours",
+    "completed": false
+  },
+  {
+    "x": 2176.179825123683,
+    "y": 3743.2856777940437,
+    "color": 3,
+    "text": "ribbiting tale quest",
+    "completed": false
+  },
+  {
+    "x": 1351.4551327420559,
+    "y": 3863.9727598251498,
+    "color": 3,
+    "text": "death on the isle (34 thiev, 32 agil)",
+    "completed": false
+  },
+  {
+    "x": 1800.552831935477,
+    "y": 3546.6006193439766,
+    "color": 3,
+    "text": "build quetzal site if u get feed",
+    "completed": false
+  },
+  {
+    "x": 1436.4251896954818,
+    "y": 3293.890389604444,
+    "color": 3,
+    "text": "get wyrmling bones",
+    "completed": false
+  },
+  {
+    "x": 2037.1810849142312,
+    "y": 3908.3356134950673,
+    "color": 3,
+    "text": "bury wyrmling bones",
+    "completed": false
+  },
+  {
+    "x": 5543.247658833673,
+    "y": 3097.0594383417997,
+    "color": 3,
+    "text": "buy snapdragon",
+    "completed": false
+  },
+  {
+    "x": 2053.3783764750337,
+    "y": 3899.8936734841486,
+    "color": 3,
+    "text": "10 laps (50 agil)",
+    "completed": false
+  },
+  {
+    "x": 1780.9742723083666,
+    "y": 3563.9310859841494,
+    "color": 3,
+    "text": "at first light (46 hunter, 30 herb, 27 con)",
+    "completed": false
+  },
+  {
+    "x": 1805.9742723083666,
+    "y": 3531.597752650816,
+    "color": 8,
+    "text": "need to do the quest to do these",
+    "completed": false
+  },
+  {
+    "x": 1309.55611578504,
+    "y": 2602.6019111351443,
+    "color": 3,
+    "text": "shadows of custodia (54 slayer, 45 fishing, 41 con, 36 hunter)",
+    "completed": false
+  },
+  {
+    "x": 1324.2227824517067,
+    "y": 2673.935244468478,
+    "color": 2,
+    "text": "make oak planks for 41 con",
+    "completed": false
+  },
+  {
+    "x": 2385.7574818370617,
+    "y": 3386.348580165877,
+    "color": 3,
+    "text": "25 meat pies (see other shit for ingredients)",
+    "completed": false
+  },
+  {
+    "x": 2430.0908151703948,
+    "y": 3338.6819134992106,
+    "color": 3,
+    "text": "20 silver items smelted",
+    "completed": false
+  },
+  {
+    "x": 2342.0908151703948,
+    "y": 3262.0152468325437,
+    "color": 3,
+    "text": "buy and craft 100 unpowered orbs",
+    "completed": false
+  },
+  {
+    "x": 2438.0908151703948,
+    "y": 3339.348580165877,
+    "color": 3,
+    "text": "sapphire amulet",
+    "completed": false
+  },
+  {
+    "x": 2436.4241485037282,
+    "y": 3329.348580165877,
+    "color": 3,
+    "text": "emerald ring",
+    "completed": false
+  },
+  {
+    "x": 2448.3016380870617,
+    "y": 3329.569771832544,
+    "color": 3,
+    "text": "diamond ring + power ammy (for stash)",
+    "completed": false
+  },
+  {
+    "x": 5804.917120121339,
+    "y": 3160.372045525685,
+    "color": 3,
+    "text": "diamond ring + power ammy stash w/ 55 con, 2 teak plank, 10 nail",
+    "completed": false
+  },
+  {
+    "x": 1311.08639294874,
+    "y": 2563.799116745488,
+    "color": 8,
+    "text": "buy 100 nails for various crap",
+    "completed": false
+  },
+  {
+    "x": 5593.767816209772,
+    "y": 3676.9851412753155,
+    "color": 3,
+    "text": "mine red topaz and cut",
+    "completed": false
+  },
+  {
+    "x": 2068.5569296444864,
+    "y": 3751.836345945619,
+    "color": 3,
+    "text": "kill oryx w/ melee",
+    "completed": false
+  },
+  {
+    "x": 1578.63227172782,
+    "y": 3433.311150008119,
+    "color": 3,
+    "text": "kill scorpion w/ mithril spear",
+    "completed": false
+  },
+  {
+    "x": 2090.1231586028193,
+    "y": 3251.4603831331187,
+    "color": 2,
+    "text": "but addy weapon, mith spear",
+    "completed": false
+  },
+  {
+    "x": 1805.7638586028195,
+    "y": 3539.7245352164514,
+    "color": 3,
+    "text": "create quetzal whistle",
+    "completed": false
+  },
+  {
+    "x": 2347.3273749569858,
+    "y": 3293.256315945618,
+    "color": 0,
+    "text": "buy and equip tyras helm",
+    "completed": false
+  },
+  {
+    "x": 2209.6026650029544,
+    "y": 2971.8514760309704,
+    "color": 3,
+    "text": "10 frost crab",
+    "completed": false
+  },
+  {
+    "x": 2193.269331669621,
+    "y": 2972.5181426976374,
+    "color": 3,
+    "text": "icefiend",
+    "completed": false
+  },
+  {
+    "x": 2201.269331669621,
+    "y": 2964.5181426976374,
+    "color": 3,
+    "text": "1 moxi kc",
+    "completed": false
+  },
+  {
+    "x": 1476.7655493206628,
+    "y": 3142.421809577845,
+    "color": 3,
+    "text": "heart of darkness (55 mining, 48 thieving, 48 slayer, 46 agil)",
+    "completed": false
+  },
+  {
+    "x": 2364.9873380541067,
+    "y": 3788.018382311843,
+    "color": 3,
+    "text": "55 mining (assume iron and steel bars)",
+    "completed": false
+  },
+  {
+    "x": 1352.2320438111813,
+    "y": 2650.59419093935,
+    "color": 8,
+    "text": "could delay the bars for this until green phase",
+    "completed": false
+  },
+  {
+    "x": 2341.7052448691047,
+    "y": 3364.3208993777826,
+    "color": 0,
+    "text": "fish house key",
+    "completed": false
+  },
+  {
+    "x": 1242.427453202438,
+    "y": 2569.8213160444493,
+    "color": 3,
+    "text": "fletch oak, willow, maple totems",
+    "completed": false
+  },
+  {
+    "x": 2064.0118777556413,
+    "y": 3629.5970246059983,
+    "color": 3,
+    "text": "gem from gorak",
+    "completed": false
+  },
+  {
+    "x": 2154.903225672307,
+    "y": 3352.299395439332,
+    "color": 3,
+    "text": "steal house key",
+    "completed": false
+  },
+  {
+    "x": 2068.569892338974,
+    "y": 3387.6327287726654,
+    "color": 3,
+    "text": "steal 25 valuables",
+    "completed": false
+  },
+  {
+    "x": 2018.9032256723074,
+    "y": 3390.299395439332,
+    "color": 3,
+    "text": "bribe urchin (15 valuables)",
+    "completed": false
+  },
+  {
+    "x": 2074.2365590056406,
+    "y": 3393.299395439332,
+    "color": 3,
+    "text": "steal 100 valuables",
+    "completed": false
+  },
+  {
+    "x": 2164.903225672307,
+    "y": 3348.6327287726654,
+    "color": 3,
+    "text": "tele to fortis",
+    "completed": false
+  },
+  {
+    "x": 1341.3116999632578,
+    "y": 2628.395480421117,
+    "color": 3,
+    "text": "250 mith bolts unf",
+    "completed": false
+  },
+  {
+    "x": 1863.7170756924234,
+    "y": 3277.9577811502822,
+    "color": 3,
+    "text": "pickpocket master farmer",
+    "completed": false
+  },
+  {
+    "x": 2369.4128256924228,
+    "y": 3804.602656150282,
+    "color": 3,
+    "text": "50 mith mined/smelted",
+    "completed": false
+  },
+  {
+    "x": 1432.5386361090902,
+    "y": 3283.5695290669482,
+    "color": 3,
+    "text": "10 calc. deposits, 250 bone shards mined",
+    "completed": false
+  },
+  {
+    "x": 2161.0742673590903,
+    "y": 3364.0133207336153,
+    "color": 3,
+    "text": "open 800 coins at once",
+    "completed": false
+  },
+  {
+    "x": 5547.120586941192,
+    "y": 3102.0575150575137,
+    "color": 3,
+    "text": "get agility ticket",
+    "completed": false
+  },
+  {
+    "x": 2386.623884857861,
+    "y": 3450.2537921408475,
+    "color": 3,
+    "text": "meat and greet (43 prayer)",
+    "completed": false
+  },
+  {
+    "x": 2199.114403607861,
+    "y": 2980.87936922418,
+    "color": 3,
+    "text": "get the pendant and activate statues",
+    "completed": false
+  },
+  {
+    "x": 5384.5141293905135,
+    "y": 3144.9746680119274,
+    "color": 3,
+    "text": "build mahogany portal (65 con)",
+    "completed": false
+  },
+  {
+    "x": 1323.0824083080809,
+    "y": 2638.2924488804565,
+    "color": 3,
+    "text": "mithril grapple",
+    "completed": false
+  },
+  {
+    "x": 2131.3768416414136,
+    "y": 3301.063090547123,
+    "color": 8,
+    "text": "buy rope/s for mith grapple",
+    "completed": false
+  },
+  {
+    "x": 1314.4092551592846,
+    "y": 3986.900382735434,
+    "color": 2,
+    "text": "kill 3 chicken in 6 seconds",
+    "completed": false
+  },
+  {
+    "x": 5362.684165622933,
+    "y": 3205.3190804321207,
+    "color": 3,
+    "text": "kill steel dragon (gl)",
+    "completed": false
+  },
+  {
+    "x": 7594.3755730571365,
+    "y": 2205.952975646889,
+    "color": 3,
+    "text": "defeat werewolf",
+    "completed": false
+  },
+  {
+    "x": 1661.5926141912316,
+    "y": 2822.1161214759186,
+    "color": 3,
+    "text": "1 huey kc",
+    "completed": false
+  },
+  {
+    "x": 1433.2883110712967,
+    "y": 3304.3682772338475,
+    "color": 3,
+    "text": "buy rune pickaxe",
+    "completed": false
+  },
+  {
+    "x": 2330.280760385262,
+    "y": 3806.498882512507,
+    "color": 8,
+    "text": "yellow dots - steel pick",
+    "completed": false
+  },
+  {
+    "x": 2375.614093718595,
+    "y": 3796.1655491791735,
+    "color": 8,
+    "text": "green - do cam torum quest first and get rune pick",
+    "completed": false
+  },
+  {
+    "x": 5377.011716329316,
+    "y": 3135.2967458121184,
+    "color": 2,
+    "text": "hoop on stick and land it",
+    "completed": false
+  },
+  {
+    "x": 862.97970616265,
+    "y": 3178.473784358992,
+    "color": 3,
+    "text": "scrambled (38 con, 36 cook, 35 smith)",
+    "completed": false
+  },
+  {
+    "x": 863.3130394959834,
+    "y": 3186.1404510256584,
+    "color": 3,
+    "text": "talk to egg for an egg and equip the egg",
+    "completed": false
+  },
+  {
+    "x": 912.3022061626501,
+    "y": 3662.242951025659,
+    "color": 3,
+    "text": "sit next to picnic -> equip orange (43 agil)",
+    "completed": false
+  },
+  {
+    "x": 1250.009370134255,
+    "y": 2636.5136192467276,
+    "color": 3,
+    "text": "possibly some forestry events",
+    "completed": false
+  },
+  {
+    "x": 942.097657634255,
+    "y": 3172.81168820506,
+    "color": 3,
+    "text": "watch crab burrow",
+    "completed": false
+  },
+  {
+    "x": 5384.558215030473,
+    "y": 3124.893379933847,
+    "color": 8,
+    "text": "26 flour from larder (25 for meat pie, 1 for pizza)",
+    "completed": false
+  },
+  {
+    "x": 2226.6117477667813,
+    "y": 3331.202238109714,
+    "color": 8,
+    "text": "26 raw beef for meat pies and pizza, cheese",
+    "completed": false
+  },
+  {
+    "x": 2214.6634227667814,
+    "y": 3404.3361131097136,
+    "color": 3,
+    "text": "make sunfire rune (33 rc)",
+    "completed": false
+  },
+  {
+    "x": 1765.8121583247737,
+    "y": 3288.7056225526453,
+    "color": 3,
+    "text": "harvest ranarr",
+    "completed": false
+  },
+  {
+    "x": 2424.097441658106,
+    "y": 3329.6219579693116,
+    "color": 8,
+    "text": "make ammy of chemistry",
+    "completed": false
+  },
+  {
+    "x": 4483.695982168631,
+    "y": 2975.6410338734827,
+    "color": 3,
+    "text": "200 runes crafted, 33 rc",
+    "completed": false
+  },
+  {
+    "x": 5374.751498867611,
+    "y": 3144.5047684272445,
+    "color": 2,
+    "text": "build jester and beat jacky",
+    "completed": false
+  },
+  {
+    "x": 1421.782669043171,
+    "y": 3301.848366594014,
+    "color": 0,
+    "text": "trim beard",
+    "completed": false
+  },
+  {
+    "x": 1424.6976794598374,
+    "y": 3289.0223207606805,
+    "color": 0,
+    "text": "get haircut",
+    "completed": false
+  },
+  {
+    "x": 2120.4931586466887,
+    "y": 3293.9788883402307,
+    "color": 8,
+    "text": "can buy hunter shit here",
+    "completed": false
+  }
+]
