@@ -134,6 +134,7 @@ export function MapEditor() {
   const handleMouseUp = useCallback((e: React.MouseEvent) => {
     if (pending) return;
     onMouseUp();
+    if (e.button !== 0) return;
     if (!clickStartRef.current) return;
     const dx = e.clientX - clickStartRef.current.x;
     const dy = e.clientY - clickStartRef.current.y;
