@@ -105,11 +105,16 @@ def main():
 
     for color_idx_str, visit_order in solved_routes.items():
         color_idx = int(color_idx_str)
-        phase_markers = [m for m in markers if m["color"] == color_idx and not m.get("completed", False)]
+        phase_markers = [m for i, m in enumerate(markers) if m["color"] == color_idx and not m.get("completed", False)]
+        # Build index-to-global-id mapping (web marker IDs match position in full markers array)
+        phase_marker_ids = [i for i, m in enumerate(markers) if m["color"] == color_idx and not m.get("completed", False)]
 
         if len(phase_markers) != len(visit_order):
             print(f"  Phase {color_idx}: marker count mismatch ({len(phase_markers)} vs {len(visit_order)} in order), skipping")
             continue
+
+        # Convert visit_order from phase-local indices to global marker IDs
+        visit_order_ids = [phase_marker_ids[idx] for idx in visit_order]
 
         segments = []
         for i in range(len(visit_order) - 1):
@@ -152,7 +157,7 @@ def main():
                 ])
 
         web_routes[color_idx_str] = {
-            "visitOrder": visit_order,
+            "visitOrder": visit_order_ids,
             "segments": segments,
         }
         print(f"  Phase {color_idx} ({PHASE_COLORS.get(color_idx, '?')}): {len(visit_order)} stops, {len(segments)} segments")

@@ -136,26 +136,24 @@ export function MapCanvas({
 
     ctx.restore();
 
-    // Number the stops in screen space
+    // Number the stops in screen space (visitOrder contains marker IDs)
+    const markerById = new Map(markers.map((m) => [m.id, m]));
     for (const [phaseStr, route] of Object.entries(routes)) {
       const phaseIdx = parseInt(phaseStr);
       if (!visiblePhases.has(phaseIdx)) continue;
       const color = colors[phaseIdx] || '#fff';
-      const phaseMarkers = markers.filter(
-        (m) => m.color === phaseIdx && !isCompleted(m.id)
-      );
       ctx.font = 'bold 10px Arial';
       ctx.textAlign = 'center';
-      for (let i = 0; i < route.visitOrder.length; i++) {
-        const idx = route.visitOrder[i];
-        if (idx < phaseMarkers.length) {
-          const m = phaseMarkers[idx];
-          const sx = m.x * transform.scale + transform.offsetX;
-          const sy = m.y * transform.scale + transform.offsetY;
-          if (sx < -20 || sx > w + 20 || sy < -20 || sy > h + 20) continue;
-          ctx.fillStyle = color;
-          ctx.fillText(String(i + 1), sx, sy - MARKER_RADIUS - 4);
-        }
+      let stopNum = 0;
+      for (const markerId of route.visitOrder) {
+        const m = markerById.get(markerId);
+        if (!m || isCompleted(m.id)) continue;
+        stopNum++;
+        const sx = m.x * transform.scale + transform.offsetX;
+        const sy = m.y * transform.scale + transform.offsetY;
+        if (sx < -20 || sx > w + 20 || sy < -20 || sy > h + 20) continue;
+        ctx.fillStyle = color;
+        ctx.fillText(String(stopNum), sx, sy - MARKER_RADIUS - 4);
       }
     }
 
